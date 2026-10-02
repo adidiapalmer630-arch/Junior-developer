@@ -3,51 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Kimutai — Portfolio</title>
+    <meta name="author" content="Emmanuel Kimutai">
+    <meta name="description" content="Portfolio website for Emmanuel Kimutai, a junior developer showcasing projects, skills, and contact details. Built with HTML, CSS, and JavaScript.">
+    <title>Emmanuel Kimutai | Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <svg class="profile-pic" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laptop computer icon">
-            <circle cx="70" cy="70" r="70" fill="#ffffff"/>
-            <rect x="35" y="42" width="70" height="46" rx="4" fill="#2d5a6b"/>
-            <rect x="41" y="48" width="58" height="34" fill="#e6eef0"/>
-            <path d="M28 92 h84 l-6 10 a6 6 0 0 1 -5 3 H39 a6 6 0 0 1 -5 -3 Z" fill="#e08e45"/>
-            <rect x="60" y="88" width="20" height="4" fill="#1c3d49"/>
-        </svg>
-        <h1>My Portfolio</h1>
-        <p>As I grew up I developed an interest in computer coding and becoming an IT professional. I've chased that dream ever since. I hope one day to be an expert in IT and a senior software developer.</p>
+    <header class="hero">
+        <nav class="topbar">
+            <div class="brand">Emmanuel Kimutai</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Junior Developer • Aspiring Senior Software Engineer</p>
+                <h1>Building ideas into simple, memorable digital experiences.</h1>
+                <p>I’m Emmanuel Kimutai, a junior developer driven by curiosity, consistency, and the goal of growing into a capable software engineer. I enjoy learning new skills and turning concepts into practical web solutions.</p>
+                <div class="actions">
+                    <a class="button primary" href="#projects">View Projects</a>
+                    <a class="button secondary" href="#contacts">Contact Me</a>
+                </div>
+            </div>
+
+            <aside class="hero-card reveal">
+                <p class="card-label">Tech Stack</p>
+                <ul class="stack">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p class="site-link">Live site: <a href="https://emmanuel-kimutai-portfolio.netlify.app" target="_blank" rel="noopener noreferrer">Open portfolio</a></p>
+            </aside>
+        </div>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>My official name is Emmanuel Kimutai and I am a junior developer aspiring to be a senior developer. I'm a student at Maseno University pursuing a Bachelor of Science in Industrial Chemistry. I'm still new to web development, but I aspire to become skilled in tech. Thanks.</p>
-    </section>
+    <main>
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <p>My official name is Emmanuel Kimutai, and I am a junior developer with ambitions to grow into a senior software developer. I am currently pursuing a Bachelor of Science in Industrial Chemistry at Maseno University, while developing my skills in web development and technology.</p>
+            <p>I am still early in my journey, but I am passionate about learning, creating, and improving my technical ability every day. This portfolio reflects my growth, my interests, and the work I’m proud to share.</p>
+        </section>
 
-    <section>
-        <h2>My Skills</h2>
-        <p>As a junior developer I have learnt three languages, namely:</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+        <section id="skills" class="reveal">
+            <h2>My Skills</h2>
+            <p>As a junior developer, I have built a foundation in the following technologies:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>My Projects</h2>
-        <p>I have made several websites, but the most outstanding one is the Akan Name Generator. I promise to make great websites in the future.</p>
-    </section>
+        <section id="projects" class="reveal">
+            <h2>My Projects</h2>
+            <p>I have developed a few simple websites and interactive web experiences, with one of my notable projects being the Akan Name Generator. I am committed to building more polished, functional, and impactful projects in the future.</p>
+            <p><strong>Project:</strong> <a href="https://adidiapalmer630-arch.github.io/akan-name-generator/" target="_blank" rel="noopener noreferrer">Akan Name Generator</a></p>
+        </section>
 
-    <section id="contacts">
-        <h2>Contacts</h2>
-        <p>I can be reached through email or WhatsApp:</p>
-        <ul>
-            <li>Email: adidiapalmer630@gmail.com</li>
-            <li>WhatsApp: +254743595203</li>
-        </ul>
-    </section>
-        <footer>Copyright &copy; <span id="year"></span></footer>
+        <section class="reveal">
+            <h2>About This Site</h2>
+            <p>This portfolio website was created by Emmanuel Kimutai to showcase his journey as a junior developer, his educational background, his skills, and his contact information. It is a simple personal website built using HTML, CSS, and JavaScript to present his work and professional interests in a clean and approachable format.</p>
+            <p><strong>Technology used:</strong> HTML, CSS, and JavaScript.</p>
+            <p><strong>Website link:</strong> <a href="https://emmanuel-kimutai-portfolio.netlify.app" target="_blank" rel="noopener noreferrer">https://emmanuel-kimutai-portfolio.netlify.app</a></p>
+        </section>
+
+        <section id="contacts" class="reveal">
+            <h2>Contacts</h2>
+            <p>I can be reached through email or WhatsApp:</p>
+            <ul>
+                <li>Email: adidiapalmer630@gmail.com</li>
+                <li>WhatsApp: +254743595203</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Emmanuel Kimutai</p>
+        <p>Copyright &copy; <span id="year"></span></p>
+    </footer>
 
     <script src="script.js" defer></script>
 </body>
